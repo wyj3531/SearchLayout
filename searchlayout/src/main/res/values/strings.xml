@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">searchlayout</string>
+    <string name="text_everyone_search">大家都在搜</string>
+    <string name="text_clear_all">清空</string>
+    <string name="text_recent_search">最近搜索</string>
+    <string name="alert_cancel">取消</string>
+    <string name="hint_search_card">输入搜索关键字</string>
+</resources>

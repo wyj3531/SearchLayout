@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color55">#555555</color>
+    <color name="color99">#999999</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTransparent">#0000</color>
+    <color name="bg_search">#f7f0f1</color>
+    <color name="bg_search_tag">#fdf8ba</color>
+    <color name="bg_search_tag_stroke">#f8e71c</color>
+    <color name="colorD0">#d0d0d0</color>
+</resources>
