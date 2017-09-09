@@ -35,10 +35,10 @@ public class CardSearchManger {
         List<String> names = new ArrayList<>();
         if (!mDbHelper.isDbOpen()) mDbHelper.open();
         Cursor cursor = mDbHelper.queryAllNames();
-        while (cursor.moveToNext()) {
+        do {
             String name = cursor.getString(cursor.getColumnIndex("name"));
             names.add(name);
-        }
+        } while (cursor.moveToNext());
         cursor.close();
         return names;
     }
