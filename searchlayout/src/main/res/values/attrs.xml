@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="SearchLayout">
+    <declare-styleable name="FlowSearchLayout">
         <attr name="search_text_color" format="color|reference"/>
         <attr name="search_text_size" format="dimension|reference"/>
         <attr name="search_text_color_hint" format="color|reference"/>

@@ -10,6 +10,7 @@ import android.databinding.Bindable;
 
 public class SearchModel extends BaseObservable {
     private String name;
+    private boolean checked;
 
     @Bindable
     public String getName() {

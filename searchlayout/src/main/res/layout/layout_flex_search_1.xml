@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<layout>
 
     <data>
 
         <variable
             name="presenter"
-            type="com.foretree.search.FlowSearchLayout.Presenter" />
+            type="com.foretree.search.FlexSearchLayout.Presenter" />
 
         <variable
             name="model"
-            type="com.foretree.search.SearchModel"/>
+            type="com.foretree.search.SearchModel" />
     </data>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/bg_search"
-        android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_search"
+    android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -39,12 +40,12 @@
                 app:searchIcon="@drawable/ic_search" />
 
             <TextView
+                android:id="@+id/tv_cancel"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:paddingEnd="13.5dp"
-                android:id="@+id/tv_cancel"
                 android:onClick="@{presenter::cancelSearch}"
+                android:paddingEnd="13.5dp"
                 android:paddingStart="13.5dp"
                 android:text="@string/alert_cancel"
                 android:textColor="@color/color55"
@@ -55,9 +56,9 @@
 
         <TextView
             android:id="@+id/tv_model"
-            android:text="@={model.name}"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@={model.name}" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -88,23 +89,23 @@
 
         </LinearLayout>
 
-        <com.foretree.search.view.TagFlowLayout
-            android:id="@+id/flow_layout_history"
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_history"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13.4sp"
             android:padding="10dp"
+            android:text="@string/text_everyone_search"
             android:textColor="@color/color55"
-            android:text="@string/text_everyone_search" />
+            android:textSize="13.4sp" />
 
-        <com.foretree.search.view.TagFlowLayout
-            android:id="@+id/flow_layout_recommend"
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_recommend"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 

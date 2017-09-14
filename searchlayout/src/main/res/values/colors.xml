@@ -8,4 +8,6 @@
     <color name="bg_search_tag">#fdf8ba</color>
     <color name="bg_search_tag_stroke">#f8e71c</color>
     <color name="colorD0">#d0d0d0</color>
+    <color name="colorText">#efefef</color>
+    <color name="colorHint">#f3f3f3</color>
 </resources>
